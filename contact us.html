@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fieldserve | Contact Us</title>
+  <meta name="description" content="Contact Fieldserve for drone geophysical surveys, mineral targeting, and satellite geotechnical monitoring." />
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap)" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Fieldserve</a>
+    <nav class="nav">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/mining-investors.html">Mining Investors</a>
+      <a class="nav-link active" href="/contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Contact Us</h1>
+      <p class="lead">We’re available to discuss your project requirements and timelines.</p>
+    </section>
+
+    <section class="contact-grid">
+      <div class="contact-card">
+        <h2 class="card-title">Email</h2>
+        <p><a href="mailto:info@fieldserve.co.za">info@fieldserve.co.za</a></p>
+      </div>
+
+      <div class="contact-card">
+        <h2 class="card-title">Phone</h2>
+        <p><a href="tel:+27728734668">072 873 4668</a></p>
+      </div>
+
+      <div class="contact-card">
+        <h2 class="card-title">Address</h2>
+        <address>
+          The Innovation Hub<br />
+          1 Mark Shuttleworth Street<br />
+          Lynnwood<br />
+          Pretoria
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Fieldserve. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
