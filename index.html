@@ -1,65 +1,267 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fieldserve | Drone & Satellite Surveys for Mineral Exploration & Geotechnical Monitoring</title>
-  <meta name="description" content="Fieldserve provides remote surveying, data acquisition, and analysis for mining and mineral exploration." />
-  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
-  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap)" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <title>FieldServe | Geoscience & Mining Intelligence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #070b10;
+      color: #e8eef5;
+      line-height: 1.7;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 50px;
+      background: rgba(10, 18, 28, 0.95);
+      border-bottom: 1px solid #1a2633;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 16px;
+    }
+
+    .nav a {
+      color: #b9c6d6;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 13px;
+    }
+
+    .nav a:hover {
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 110px 50px;
+      text-align: center;
+      background: radial-gradient(circle at top, #0f1c2b, #070b10 60%);
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      margin-bottom: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #b8c4d4;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .cta {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 22px;
+      background: #2f80ed;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 90px 50px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .subtext {
+      color: #aab7c6;
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #0e1622;
+      border: 1px solid #1a2633;
+      padding: 26px;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 16px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #b8c4d4;
+    }
+
+    /* PROCESS */
+    .process {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .step {
+      padding: 20px;
+      border-left: 2px solid #2f80ed;
+      background: #0e1622;
+    }
+
+    .step h4 {
+      margin: 0 0 10px 0;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 12px;
+      color: #6f7f91;
+      border-top: 1px solid #1a2633;
+    }
+
+  </style>
+
 </head>
+
 <body>
-  <header class="site-header">
-    <a class="brand" href="/">Fieldserve</a>
-    <nav class="nav">
-      <a class="nav-link active" href="/">Home</a>
-      <a class="nav-link" href="/mining-investors.html">Mining Investors</a>
-      <a class="nav-link" href="/contact.html">Contact Us</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h1 class="hero-brand">Fieldserve</h1>
-      <h2 class="hero-title">Drone & Satellite Surveys for Mineral Exploration & Geotechnical Monitoring</h2>
-      <p class="hero-subtitle">
-        Fieldserve is a specialist remote surveying business that provides data acquisition and analysis for applications in mining and mineral exploration for both investors and technical professionals.
-      </p>
-    </section>
+  <!-- NAV -->
+  <div class="navbar">
+    <div class="logo">FIELDSERVE</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="investors.html">Mining Investors</a>
+      <a href="#services">Services</a>
+      <a href="#process">Approach</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
 
-    <section class="services">
-      <h3 class="section-title">Services</h3>
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Geoscience Intelligence for Mining & Infrastructure Risk</h1>
+    <p>
+      FieldServe provides remote sensing, drone geophysics, and geotechnical monitoring solutions
+      that support investment decisions across early-stage exploration and mining infrastructure.
+    </p>
+    <a class="cta" href="#services">Explore Capabilities</a>
+  </div>
 
-      <article class="card">
-        <h4 class="card-title">Mineral Exploration Targeting</h4>
-        <p class="card-text">
-          We conduct desktop studies and analyze satellite imagery to help mining investors assess the mining potential of areas of interest before committing resources for field work and prospecting rights applications.
+  <!-- PROBLEM / CONTEXT -->
+  <div class="section">
+    <h2>Decision Support for High-Risk Subsurface Environments</h2>
+    <p class="subtext">
+      Mining and infrastructure investments require early clarity on geological potential and structural risk.
+      FieldServe delivers data-driven insight before capital is deployed into field campaigns or drilling programs.
+    </p>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="section" id="services">
+
+    <h2>Core Capabilities</h2>
+    <p class="subtext">
+      Integrated remote sensing workflows designed to reduce uncertainty across exploration and geotechnical domains.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Mineral Exploration Targeting</h3>
+        <p>
+          Regional-scale desk studies and satellite-based interpretation to evaluate mineral potential
+          prior to field mapping or ground truthing.
         </p>
-      </article>
+      </div>
 
-      <article class="card">
-        <h4 class="card-title">Drone Geophysical Surveys</h4>
-        <p class="card-text">
-          We provide exploration geologists and permit or rights holders with airborne magnetic surveys using drones for exploration projects that have progressed past the desktop and surface mapping stages. Our UAV magnetic surveys help project managers identify magnetic anomalies over large and rugged terrain in a fraction of the time required for ground surveys—while offering higher resolution and closer proximity to the surface than manned aircraft.
+      <div class="card">
+        <h3>Drone Geophysics</h3>
+        <p>
+          High-resolution airborne geophysical surveys for structural interpretation and drill target generation
+          across complex terrain environments.
         </p>
-      </article>
+      </div>
 
-      <article class="card">
-        <h4 class="card-title">Satellite Geotechnical Monitoring</h4>
-        <p class="card-text">
-          We use remote sensing techniques such as InSAR and multispectral processing to assess the stability of legacy and active tailings dams and dumps. We analyze available satellite imagery and provide a historical assessment of risks and developments so that investors can make informed decisions for tailings re-mining projects, or operators can implement continuous monitoring for active deposition.
+      <div class="card">
+        <h3>Geotechnical Monitoring</h3>
+        <p>
+          Satellite radar and multi-sensor deformation analysis for tailings storage facilities and legacy mining assets,
+          enabling historical and active risk assessment.
         </p>
-      </article>
-    </section>
-  </main>
+      </div>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Fieldserve. All rights reserved.</p>
-  </footer>
+    </div>
+  </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- APPROACH -->
+  <div class="section" id="process">
+
+    <h2>Analytical Approach</h2>
+    <p class="subtext">
+      A structured workflow designed for engineering-grade decision support.
+    </p>
+
+    <div class="process">
+
+      <div class="step">
+        <h4>1. Data Acquisition</h4>
+        <p>Satellite, drone, and geospatial datasets are compiled and validated.</p>
+      </div>
+
+      <div class="step">
+        <h4>2. Remote Sensing Analysis</h4>
+        <p>Geological, structural, and deformation indicators are interpreted.</p>
+      </div>
+
+      <div class="step">
+        <h4>3. Target Definition</h4>
+        <p>Prospective zones and risk areas are prioritised for further investigation.</p>
+      </div>
+
+      <div class="step">
+        <h4>4. Decision Support Output</h4>
+        <p>Results are delivered to investors and engineers for operational planning.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section" id="contact">
+    <h2>Engage with FieldServe</h2>
+    <p class="subtext">
+      For investment, exploration, or geotechnical risk advisory discussions:
+      <br><br>
+      info@fieldserve.co.za
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    © 2026 FieldServe. Geoscience & Mining Intelligence Advisory
+  </div>
+
 </body>
 </html>
