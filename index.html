@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>FieldServe</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fieldserve | Drone & Satellite Surveys for Mineral Exploration & Geotechnical Monitoring</title>
+  <meta name="description" content="Fieldserve provides remote surveying, data acquisition, and analysis for mining and mineral exploration." />
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap)" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Fieldserve</a>
+    <nav class="nav">
+      <a class="nav-link active" href="/">Home</a>
+      <a class="nav-link" href="/mining-investors.html">Mining Investors</a>
+      <a class="nav-link" href="/contact.html">Contact Us</a>
+    </nav>
+  </header>
 
-<body style="font-family: Arial, margin: 40px; line-height: 1.6; max-width: 900px;">
+  <main>
+    <section class="hero">
+      <h1 class="hero-brand">Fieldserve</h1>
+      <h2 class="hero-title">Drone & Satellite Surveys for Mineral Exploration & Geotechnical Monitoring</h2>
+      <p class="hero-subtitle">
+        Fieldserve is a specialist remote surveying business that provides data acquisition and analysis for applications in mining and mineral exploration for both investors and technical professionals.
+      </p>
+    </section>
 
-  <h1>FieldServe</h1>
-  <h3>Remote Sensing & Geoscience Solutions for Mining and Infrastructure</h3>
+    <section class="services">
+      <h3 class="section-title">Services</h3>
 
-  <p>
-    FieldServe provides advanced geospatial and remote sensing solutions that support mining investors,
-    exploration managers, and geotechnical stakeholders in making informed, data-driven decisions.
-  </p>
+      <article class="card">
+        <h4 class="card-title">Mineral Exploration Targeting</h4>
+        <p class="card-text">
+          We conduct desktop studies and analyze satellite imagery to help mining investors assess the mining potential of areas of interest before committing resources for field work and prospecting rights applications.
+        </p>
+      </article>
 
-  <hr>
+      <article class="card">
+        <h4 class="card-title">Drone Geophysical Surveys</h4>
+        <p class="card-text">
+          We provide exploration geologists and permit or rights holders with airborne magnetic surveys using drones for exploration projects that have progressed past the desktop and surface mapping stages. Our UAV magnetic surveys help project managers identify magnetic anomalies over large and rugged terrain in a fraction of the time required for ground surveys—while offering higher resolution and closer proximity to the surface than manned aircraft.
+        </p>
+      </article>
 
-  <h2>Our Services</h2>
+      <article class="card">
+        <h4 class="card-title">Satellite Geotechnical Monitoring</h4>
+        <p class="card-text">
+          We use remote sensing techniques such as InSAR and multispectral processing to assess the stability of legacy and active tailings dams and dumps. We analyze available satellite imagery and provide a historical assessment of risks and developments so that investors can make informed decisions for tailings re-mining projects, or operators can implement continuous monitoring for active deposition.
+        </p>
+      </article>
+    </section>
+  </main>
 
-  <h3>1. Mineral Exploration Targeting</h3>
-  <p>
-    We support early-stage mining investors in progressing through the mineral exploration journey by
-    providing desk studies and remote sensing analysis to assess the mining potential of an area of interest
-    before any field mapping takes place. This helps reduce uncertainty and improves early-stage decision-making.
-  </p>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Fieldserve. All rights reserved.</p>
+  </footer>
 
-  <h3>2. Drone Geophysics</h3>
-  <p>
-    We assist exploration managers and stakeholders by acquiring high-resolution geophysical data using drones.
-    This enables the generation of potential drill and trenching targets. Drone-based surveys allow us to cover
-    large and uneven terrain efficiently and in a timeous manner, improving exploration productivity and accuracy.
-  </p>
-
-  <h3>3. Geotechnical Monitoring</h3>
-  <p>
-    We use satellite radar data combined with additional sensor inputs to assess risks associated with legacy
-    tailings storage facilities. This allows investors and stakeholders to evaluate historical risk, track ground
-    deformation, and identify early indicators of structural or environmental risk over time.
-  </p>
-
-  <hr>
-
-  <h2>Contact</h2>
-  <p>
-    Email: info@fieldserve.co.za
-  </p>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
